@@ -26,7 +26,7 @@
         if($iNumbers[$i] > $iMax)
         {
             $iMax = $iNumbers[$i];
-            $nIndex = $i;
+            $nMaxIndex = $i;
         }
         if($iNumbers[$i] < $iMin)
         {
@@ -34,7 +34,7 @@
             $nMinIndex = $i;
         }
     }
-    printf("\r\nFound maximum element:%d with index %d\r\n", $iMax, $nIndex);
+    printf("\r\nFound maximum element:%d with index %d\r\n", $iMax, $nMaxIndex);
     printf("Found minimum element:%d with index %d\r\n", $iMin, $nMinIndex);
     printf("Found amplitude: %d\r\n", $iMax - $iMin);
     fgetc(STDIN);
